@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>For You, My Love 💕</title>
+    <meta name="description" content="A very special birthday surprise" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- ============================
+         PHASE 1: COUNTDOWN PAGE
+         ============================ -->
+    <section id="countdown-page">
+      <div class="hearts-container" id="heartsContainer"></div>
+      <div class="petals-container" id="petalsContainer"></div>
+
+      <div class="countdown-inner">
+        <div class="crown-icon">♛</div>
+        <p class="countdown-sub">A little something is waiting for you…</p>
+        <h1 class="countdown-heading">
+          Counting down the seconds<br />
+          <em>until your special day</em>
+        </h1>
+        <div class="divider">
+          <span class="divider-line"></span>
+          <span class="divider-heart">❤</span>
+          <span class="divider-line"></span>
+        </div>
+        <div class="countdown-timer" id="countdownTimer">
+          <div class="time-block">
+            <span class="time-number" id="days">00</span>
+            <span class="time-label">Days</span>
+          </div>
+          <span class="time-colon">:</span>
+          <div class="time-block">
+            <span class="time-number" id="hours">00</span>
+            <span class="time-label">Hours</span>
+          </div>
+          <span class="time-colon">:</span>
+          <div class="time-block">
+            <span class="time-number" id="minutes">00</span>
+            <span class="time-label">Minutes</span>
+          </div>
+          <span class="time-colon">:</span>
+          <div class="time-block">
+            <span class="time-number" id="seconds">00</span>
+            <span class="time-label">Seconds</span>
+          </div>
+        </div>
+        <p class="countdown-footer">Something beautiful is coming… 🌹</p>
+      </div>
+    </section>
+
+    <!-- ============================
+         PHASE 2: BIRTHDAY REVEAL
+         ============================ -->
+    <section id="birthday-page" class="hidden">
+
+      <canvas id="confettiCanvas"></canvas>
+      <div class="balloons-container" id="balloonsContainer"></div>
+
+      <div class="birthday-scroll">
+
+        <!-- ── HERO ── -->
+        <div class="birthday-hero fade-in">
+          <div class="sparkles-row">✨ 🌸 ✨ 🌸 ✨</div>
+          <h1 class="birthday-title">Happy Birthday,<br /><em>My Love</em></h1>
+          <p class="birthday-date">June 19, 2026 — Your Most Beautiful Day</p>
+          <div class="divider">
+            <span class="divider-line"></span>
+            <span class="divider-heart">❤</span>
+            <span class="divider-line"></span>
+          </div>
+          <p class="birthday-intro">
+            Today the whole world pauses to celebrate the most extraordinary person in my universe.
+            Every moment with you is a gift I never take for granted.
+          </p>
+        </div>
+
+        <!-- ── LETTER ── -->
+        <div class="message-section fade-in">
+          <h2 class="section-heading">A Letter From the Heart</h2>
+          <div class="letter-card">
+            <p class="letter-text">My dearest,</p>
+            <p class="letter-text">
+              From the very first moment I saw you, I knew something in my world had shifted — like a song finally finding its melody, like stars slowly aligning in the night sky after years of wandering. You stepped into my life and everything quietly became warmer, softer, more alive.
+            </p>
+            <p class="letter-text">
+              You are the kind of person people write poems about — not because of grand gestures or perfect moments, but because of the small, ordinary things you do without even noticing. The way you laugh when something catches you off guard. The way your eyes light up talking about things you love. The way you make everyone around you feel genuinely seen.
+            </p>
+            <p class="letter-text">
+              On this day, your birthday, I want you to know: you are deeply loved, fiercely admired, and endlessly cherished. Not just today — but with every single heartbeat that follows.
+            </p>
+            <p class="letter-text">
+              May this year bring you every joy you deserve, every dream you've dared to whisper, every adventure you've been too shy to reach for. I'll be right beside you for all of it.
+            </p>
+            <p class="letter-signature">With all my love, forever yours 💕</p>
+          </div>
+        </div>
+
+        <!-- ── THINGS I LOVE ABOUT YOU ── -->
+        <div class="loves-section fade-in">
+          <h2 class="section-heading">Things I Love About You</h2>
+          <p class="section-sub">Just a few of the countless reasons you're irreplaceable 🌹</p>
+          <div class="loves-grid">
+            <div class="love-item fade-in">
+              <span class="love-number">01</span>
+              <div class="love-body">
+                <h3>The way you care</h3>
+                <p>You love deeply, quietly, and completely. You remember the small things — the worries someone mentioned in passing, the little preferences nobody else notices. That kind of love is rare, and you give it so freely.</p>
+              </div>
+            </div>
+            <div class="love-item fade-in">
+              <span class="love-number">02</span>
+              <div class="love-body">
+                <h3>Your laugh</h3>
+                <p>There is no better sound in the world. It's real, it's uninhibited, and it has this magical way of making everyone in the room feel like everything is going to be perfectly okay.</p>
+              </div>
+            </div>
+            <div class="love-item fade-in">
+              <span class="love-number">03</span>
+              <div class="love-body">
+                <h3>How strong you are</h3>
+                <p>You carry things with such grace that most people don't even know you're carrying them. Your quiet strength isn't something you talk about — you just show it, every single day.</p>
+              </div>
+            </div>
+            <div class="love-item fade-in">
+              <span class="love-number">04</span>
+              <div class="love-body">
+                <h3>The light you bring</h3>
+                <p>You walk into a room and the energy shifts. Not in a loud way — in a warm way. Like the difference between a cold room and one with a fire burning. You are that warmth.</p>
+              </div>
+            </div>
+            <div class="love-item fade-in">
+              <span class="love-number">05</span>
+              <div class="love-body">
+                <h3>Your kindness</h3>
+                <p>You don't just say kind things — you do kind things when no one is watching. That's the real measure of a person's heart, and yours is one of the most beautiful I've ever known.</p>
+              </div>
+            </div>
+            <div class="love-item fade-in">
+              <span class="love-number">06</span>
+              <div class="love-body">
+                <h3>The dreams in your eyes</h3>
+                <p>When you talk about something you want, something you're passionate about, your whole face changes. That spark — that alive-ness — it reminds me that you were made for something wonderful.</p>
+              </div>
+            </div>
+            <div class="love-item fade-in">
+              <span class="love-number">07</span>
+              <div class="love-body">
+                <h3>How you make ordinary magical</h3>
+                <p>A walk, a conversation, a quiet evening — with you, nothing is ever just ordinary. You have this gift of turning the smallest moments into memories worth holding onto forever.</p>
+              </div>
+            </div>
+            <div class="love-item fade-in">
+              <span class="love-number">08</span>
+              <div class="love-body">
+                <h3>The way you love yourself</h3>
+                <p>Watching you grow into who you are — seeing you choose yourself, trust yourself, believe in yourself — is one of the most beautiful things I have ever had the privilege of witnessing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PULL QUOTES ── -->
+        <div class="quotes-section fade-in">
+          <div class="quote-block">
+            <p class="pull-quote">"You are not just someone I love — you are someone who made me understand what love is supposed to feel like."</p>
+          </div>
+        </div>
+
+        <!-- ── PHOTO GALLERY ── -->
+        <div class="gallery-section fade-in">
+          <h2 class="section-heading">Our Favourite Memories</h2>
+          <p class="section-sub">Replace these with your photos to make it personal ✨</p>
+          <div class="photo-grid">
+            <div class="photo-card">
+              <div class="photo-placeholder photo-1">
+                <div class="photo-placeholder-inner">
+                  <span class="photo-icon">📸</span>
+                  <p>Photo 1</p>
+                  <small>Add your favourite memory here</small>
+                </div>
+              </div>
+              <p class="photo-caption">The day everything began…</p>
+            </div>
+            <div class="photo-card">
+              <div class="photo-placeholder photo-2">
+                <div class="photo-placeholder-inner">
+                  <span class="photo-icon">📸</span>
+                  <p>Photo 2</p>
+                  <small>A moment frozen in time</small>
+                </div>
+              </div>
+              <p class="photo-caption">Every laugh, every smile ✨</p>
+            </div>
+            <div class="photo-card">
+              <div class="photo-placeholder photo-3">
+                <div class="photo-placeholder-inner">
+                  <span class="photo-icon">📸</span>
+                  <p>Photo 3</p>
+                  <small>Your most beautiful day</small>
+                </div>
+              </div>
+              <p class="photo-caption">The adventures we've shared 🌍</p>
+            </div>
+            <div class="photo-card">
+              <div class="photo-placeholder photo-4">
+                <div class="photo-placeholder-inner">
+                  <span class="photo-icon">📸</span>
+                  <p>Photo 4</p>
+                  <small>And all the ones to come</small>
+                </div>
+              </div>
+              <p class="photo-caption">Here's to forever 🥂</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── YOU ARE ── -->
+        <div class="youare-section fade-in">
+          <h2 class="section-heading">You Are…</h2>
+          <div class="youare-grid">
+            <div class="youare-pill">🌹 Someone worth waiting for</div>
+            <div class="youare-pill">✨ A once-in-a-lifetime person</div>
+            <div class="youare-pill">💫 Stronger than you know</div>
+            <div class="youare-pill">🌙 Beautiful in every season</div>
+            <div class="youare-pill">🔥 Passionate & unstoppable</div>
+            <div class="youare-pill">🌊 Deep beyond measure</div>
+            <div class="youare-pill">🌸 Gentle, yet unbreakable</div>
+            <div class="youare-pill">💕 So deeply, endlessly loved</div>
+            <div class="youare-pill">⭐ The best thing in my world</div>
+            <div class="youare-pill">🦋 Always becoming more</div>
+          </div>
+        </div>
+
+        <!-- ── SECOND PULL QUOTE ── -->
+        <div class="quotes-section fade-in">
+          <div class="quote-block">
+            <p class="pull-quote">"On every ordinary day I've spent with you, I've found something extraordinary. That is entirely your doing."</p>
+          </div>
+        </div>
+
+        <!-- ── WISHES ── -->
+        <div class="wishes-section fade-in">
+          <h2 class="section-heading">My Wishes for You This Year</h2>
+          <p class="section-sub">May every single one of these find you 🌸</p>
+          <div class="wishes-grid">
+            <div class="wish-card">
+              <span class="wish-icon">🌹</span>
+              <h3>Love</h3>
+              <p>May every corner of your heart be filled with the warmth of those who adore you — starting with mine.</p>
+            </div>
+            <div class="wish-card">
+              <span class="wish-icon">✨</span>
+              <h3>Joy</h3>
+              <p>May today be overflowing with laughter, sunshine, and moments that make you forget time exists.</p>
+            </div>
+            <div class="wish-card">
+              <span class="wish-icon">🌙</span>
+              <h3>Peace</h3>
+              <p>May this year bring you rest, stillness, and the quiet confidence that everything is unfolding exactly as it should.</p>
+            </div>
+            <div class="wish-card">
+              <span class="wish-icon">💫</span>
+              <h3>Growth</h3>
+              <p>May you keep blooming in ways that surprise even yourself — into more of who you already are, and who you're becoming.</p>
+            </div>
+            <div class="wish-card">
+              <span class="wish-icon">🌊</span>
+              <h3>Adventure</h3>
+              <p>May new places, new experiences, and beautiful surprises find their way to you at every turn this year.</p>
+            </div>
+            <div class="wish-card">
+              <span class="wish-icon">🔥</span>
+              <h3>Dreams</h3>
+              <p>May every dream you've quietly held find its way into reality — because you deserve all of it and so much more.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROMISE SECTION ── -->
+        <div class="promise-section fade-in">
+          <h2 class="section-heading">My Promise to You</h2>
+          <div class="promise-card">
+            <div class="promise-icon">🤝</div>
+            <p class="promise-text">
+              I promise to celebrate you — not just on your birthday, but on every Tuesday that's been harder than it should be. On the days you forget how wonderful you are. On the ordinary evenings that deserve to feel a little more special.
+            </p>
+            <p class="promise-text">
+              I promise to remind you, as many times as it takes, that you are enough — exactly as you are, right now, in this moment. Not when you achieve the next thing, not when everything is figured out. Right now.
+            </p>
+            <p class="promise-text">
+              And I promise that no matter what this year holds, you will never walk through it alone.
+            </p>
+            <div class="promise-divider">
+              <span>❤</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── FINAL ── -->
+        <div class="final-section fade-in">
+          <div class="final-card">
+            <h2 class="final-heading">🎂 Happy Birthday, Beautiful 🎂</h2>
+            <p class="final-text">
+              Here's to you — to your light, your laughter, and the way you make the world a better place just by being in it.
+              Here's to another year of you. The world is so lucky you exist.
+            </p>
+            <p class="final-text" style="margin-top: 1rem;">
+              I love you more than words could ever hold. Happy Birthday.
+            </p>
+            <div class="final-hearts">
+              <span>💕</span><span>🌸</span><span>💕</span><span>🌸</span><span>💕</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.birthday-scroll -->
+    </section>
+
+    <script src="script.js"></script>
+  <script src="https://replit-cdn.com/replit-pill/replit-pill.global.js" data-referral-code="ggeut12e78fm" data-repl-id="3d80e912-c3f3-418e-b726-c2402f775cba"></script></body>
+</html>
