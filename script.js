@@ -9,7 +9,7 @@
    CONFIGURATION
    ============================================================ */
 const BIRTHDAY_YEAR  = 2026;
-const BIRTHDAY_MONTH = 6;   // 1-indexed
+const BIRTHDAY_MONTH = 10;
 const BIRTHDAY_DAY   = 19;
 
 /* ============================================================
